@@ -39,11 +39,10 @@ const Navbar = () => {
               </Link>
             ))}
           </nav>
-          
-          <div className="hidden lg:flex items-center space-x-6">
-            <div className="flex items-center text-sm">
-              <FaPhone className="w-4 h-4 text-indigo-600 mr-2" />
-              <span className="font-medium text-gray-700">9355455140</span>
+          <div className="hidden lg:flex items-center space-x-4 text-sm text-gray-700">
+            <div className="flex items-center space-x-1">
+              <FaPhone className="w-4 h-4 text-indigo-700" />
+              <span className="font-medium">9355455140</span>
             </div>
             <div className="flex items-center text-sm">
               <FaEnvelope className="w-4 h-4 text-indigo-600 mr-2" />

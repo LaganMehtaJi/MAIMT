@@ -4,9 +4,8 @@ import './App.css'
 import { Routes,Route } from "react-router-dom";
 
 
+
 function App() {
-
-
   return (
      <>
       <Routes>
@@ -15,7 +14,7 @@ function App() {
       </Routes>
    
     </>
-  )
+  );
 }
 
 export default App
