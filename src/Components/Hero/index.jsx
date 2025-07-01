@@ -30,17 +30,8 @@ MAIMT
           </p>
           
           <div className="flex flex-col sm:flex-row gap-4 mb-12">
-            <motion.button
-              whileHover={{ scale: 1.03 }}
-              whileTap={{ scale: 0.97 }}
-              className="px-8 py-3 bg-indigo-600 hover:bg-indgo-600 rounded-lg text-white font-medium flex items-center gap-2"
-            >
-              Get Started <FaArrowRight />
-            </motion.button>
+         
             
-            <button className="px-8 py-3 bg-white/10 hover:bg-white/20 backdrop-blur-md rounded-lg border border-white/10 flex items-center gap-2">
-              <FaSearch /> Quick Search
-            </button>
           </div>
         </motion.div>
 
