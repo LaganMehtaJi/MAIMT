@@ -1,11 +1,11 @@
 import express from "express";
 const router = express.Router();
-import { GetClass } from "../controllers/class.controllers.js";
+import { GetClass ,GetSyllabus } from "../controllers/class.controllers.js";
 router.get("/class",GetClass);
-router.get("/class/syllabus/:id",);
-router.get("/class/papers/:id",);
-router.get("/class/econtent/:id",);
-router.get("/class/journals/:id",);
+router.get("/class/syllabus/:class",GetSyllabus);
+router.get("/class/papers/:class",);
+router.get("/class/econtent/:class",);
+router.get("/class/journals/:class",);
 
 export default router;
 
