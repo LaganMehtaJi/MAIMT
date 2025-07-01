@@ -1,13 +1,13 @@
-
+import Hero from "../src/Components/Hero/index.jsx";
 import './App.css'
-import Navbar from './Components/Navbar'
+
 
 function App() {
 
 
   return (
     <>
-     <Navbar/>
+
     </>
   )
 }
