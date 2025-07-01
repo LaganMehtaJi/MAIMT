@@ -1,8 +1,36 @@
 import React from "react";
 import { FaUniversity, FaUsers, FaHandsHelping, FaChartLine, FaQuoteLeft } from "react-icons/fa";
+import ProfileCard from "../Components/ProfileCard/index.jsx";
 import Navbar from "../Components/Navbar";
+  const teamMembers = [
+    {
+      id: 1,
+      name: 'Lagan Mehta',
+      position: 'Senior Full Stack Developer',
+      image: 'https://randomuser.me/api/portraits/men/1.jpg'
+    },
+    {
+      id: 2,
+      name: 'Usman Malik',
+      position: 'Frontend Architect',
+      image: 'https://randomuser.me/api/portraits/men/2.jpg'
+    },
+    {
+      id: 3,
+      name: 'Gaurav Sahni',
+      position: 'Backend Engineer',
+      image: 'https://randomuser.me/api/portraits/men/3.jpg'
+    },
+    {
+      id: 4,
+      name: 'Tanu Saini',
+      position: 'UI/UX Designer',
+      image: 'https://randomuser.me/api/portraits/women/1.jpg'
+    }
+  ];
 
 const About = () => {
+  
   return (
     <>
       <Navbar/>
@@ -94,11 +122,19 @@ const About = () => {
             </p>
           </div>
         </div>
+ <div className="flex gap-10 p-10">
+        {teamMembers.map((item, index) => (
+         
+ <ProfileCard key={index} name={item.name} image={item.image} position={item.position} />
+        
+ 
+))}
+  </div>
       </div>
 
-    
- 
 
+
+      
     </>
   );
 };
