@@ -1,12 +1,13 @@
-import Hero from "../src/Components/Hero/index.jsx";
+import Home from '../src/Screen/Home.jsx';
 import './App.css'
+
 
 function App() {
 
 
   return (
-    <>
-   <Hero/>
+     <>
+   <Home/>
     </>
   )
 }
