@@ -3,8 +3,8 @@ import { Link } from "react-router-dom";
 import { FaPhone, FaEnvelope } from "react-icons/fa";
 
 const navItems = [
-  { name: "HOME", href: "#" },
-  { name: "ABOUT", href: "#" },
+  { name: "HOME", href: "/" },
+  { name: "ABOUT", href: "/about" },
   { name: "PAPER", href: "#" },
   { name: "SYLLABUS", href: "#" },
   { name: "RULE & REGULATION", href: "#" },
