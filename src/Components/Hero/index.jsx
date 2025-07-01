@@ -1,17 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from "framer-motion";
 import { FaBookOpen, FaSearch, FaArrowRight, FaTrophy, FaRegLightbulb, FaUserTie } from "react-icons/fa";
 import Nr from "./../../assets/NR1.png";
+import { Card } from '../Card';
+import { image } from 'framer-motion/client';
+import {courseDetails} from "../../staticData/courseDetails"
 
 const LibraryHero = () => {
+  // const [courseDetails, setCourseDetails] = useState(courseDetails);
   return (
     <div className="min-h-screen bg-gradient-to-br from-white to-indigo-50">
-      
+
 
       <div className="container mx-auto px-6 py-12">
         <div className="flex flex-col lg:flex-row items-center">
           {/* Text Content */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: -50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
@@ -23,13 +27,13 @@ const LibraryHero = () => {
               </span> <br />
               <span className="text-indigo-800">MAIMT Digital Library</span>
             </h1>
-            
+
             <p className="text-lg text-indigo-700 mb-8 leading-relaxed">
-              The Digital Library at Maharaja Agrasen Institute of Management & Technology provides 
-              seamless access to academic resources including E-books, Journals, Syllabus, 
+              The Digital Library at Maharaja Agrasen Institute of Management & Technology provides
+              seamless access to academic resources including E-books, Journals, Syllabus,
               Previous Years' University Questions, Time Tables, and more.
             </p>
-            
+
             <div className="flex flex-col sm:flex-row gap-4 mb-12">
               <motion.button
                 whileHover={{ scale: 1.03 }}
@@ -38,7 +42,7 @@ const LibraryHero = () => {
               >
                 Explore Resources <FaArrowRight />
               </motion.button>
-              
+
               <motion.button
                 whileHover={{ scale: 1.03 }}
                 whileTap={{ scale: 0.97 }}
@@ -62,19 +66,19 @@ const LibraryHero = () => {
           </motion.div>
 
           {/* Image Content */}
-          <motion.div 
+          <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8 }}
             className="lg:w-1/2 flex flex-col items-center"
           >
             <div className="relative">
-              <img 
-                src={Nr} 
-                alt="MAIMT Digital Library" 
+              <img
+                src={Nr}
+                alt="MAIMT Digital Library"
                 className="w-full max-w-md rounded-xl shadow-2xl border-8 border-white"
               />
-              
+
               {/* Director Badge */}
               <motion.div
                 whileHover={{ scale: 1.05 }}
@@ -118,6 +122,11 @@ const LibraryHero = () => {
             ))}
           </div>
         </div>
+      </div>
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 p-4 mx-20">
+        {courseDetails.map((course,index) => (
+          <Card key={index} course={course}/>
+        ))}
       </div>
     </div>
   );
