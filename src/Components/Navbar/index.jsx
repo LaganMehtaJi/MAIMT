@@ -3,14 +3,14 @@ import { Link } from "react-router-dom";
 import { FaPhone, FaEnvelope } from "react-icons/fa";
 
 const navItems = [
-  { name: "HOME", href: "/" },
-  { name: "ABOUT", href: "/about" },
-  { name: "PAPER", href: "#" },
-  { name: "SYLLABUS", href: "#" },
-  { name: "RULE & REGULATION", href: "#" },
-  { name: "JOURNALS", href: "#" },
-  { name: "E-CONTENT", href: "#" },
-  { name: "CONTACT US", href: "#" },
+  { name: "Home", href: "/" },
+  { name: "About", href: "/about" },
+  { name: "Paper", href: "/paper" },
+  { name: "Syllabus", href: "/syllabus" },
+  { name: "Rule & Regulation", href: "/rule" },
+  { name: "Journals", href: "/journals" },
+  { name: "E-Content", href: "/econtent" },
+  { name: "Contact Us", href: "/contact" },
 ];
 
 const Navbar = () => {

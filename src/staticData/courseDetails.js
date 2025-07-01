@@ -9,6 +9,7 @@ export const courseDetails=[
     image: "BBA.jpg",
     description: "Bachelor of Business Administration (BBA) is a 3-year undergraduate program focused on business fundamentals."
   },
+  
   {
     courseName: "MCA",
     image: "MCA.jpg",

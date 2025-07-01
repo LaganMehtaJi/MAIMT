@@ -9,9 +9,9 @@ export const Card = ({ course }) => {
             />
 
             {/* Content */}
-            <div className="p-4 flex flex-col gap-2 flex-1">
-                <h2 className="text-xl font-bold text-gray-800">{course.courseName}</h2>
-                <p className="text-sm text-gray-600 flex-1">{course.description}</p>
+            <div className="p-4 flex flex-col gap-2 flex-1 justify-center text-center">
+                <h2 className="text-xl font-bold text-gray-800 justify-items-center">{course.courseName}</h2>
+              
             </div>
         </div>
     );
