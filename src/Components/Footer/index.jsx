@@ -36,11 +36,11 @@ const Footer = () => {
         </div>
         <div className="grid grid-cols-2 gap-x-6 text-base text-gray-400">
           <Link to="#" className="mb-2 hover:text-white">About Us</Link>
-          <Link to="#" className="mb-2 hover:text-white">Support</Link>
-          <Link to="#" className="mb-2 hover:text-white">Privacy Policy</Link>
-          <Link to="#" className="mb-2 hover:text-white">Terms & Conditions</Link>
-          <Link to="#" className="mb-2 hover:text-white">Pricing</Link>
-          <Link to="#" className="mb-2 hover:text-white">Hire From Us</Link>
+          <Link to="#" className="mb-2 hover:text-white">Paper</Link>
+          <Link to="#" className="mb-2 hover:text-white">Syllabus</Link>
+          <Link to="#" className="mb-2 hover:text-white">Journal</Link>
+          <Link to="#" className="mb-2 hover:text-white">EContent</Link>
+          <Link to="#" className="mb-2 hover:text-white">Contact</Link>
         </div>
         <div className="space-y-4 text-base text-gray-400">
           <div className="flex items-start space-x-2">
