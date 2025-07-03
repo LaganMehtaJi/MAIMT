@@ -1,6 +1,7 @@
 import React from 'react'
 import { motion } from "framer-motion";
 import { FaBookOpen, FaSearch, FaArrowRight, FaTrophy, FaRegLightbulb } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const index = () => {
   return (
@@ -27,20 +28,20 @@ const index = () => {
           </p>
 
           <div className="flex flex-wrap gap-4 mb-12">
-            <motion.button
+            <Link to={"/econtent"}><motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="flex items-center gap-2 px-6 py-3 bg-indigo-600 text-white rounded-lg font-medium shadow-lg hover:shadow-indigo-300 transition-all"
             >
               Browse Collection <FaArrowRight />
-            </motion.button>
-            <motion.button
+            </motion.button></Link>
+            <Link to={"/about"}><motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="flex items-center gap-2 px-6 py-3 border border-indigo-600 text-indigo-600 rounded-lg font-medium hover:bg-indigo-50 transition-all"
             >
               Learn More
-            </motion.button>
+            </motion.button></Link>
           </div>
 
           <div className="flex flex-wrap gap-6 mt-8">

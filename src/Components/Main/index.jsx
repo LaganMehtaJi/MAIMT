@@ -7,6 +7,7 @@ import Navbar from '../Navbar/index.jsx';
 import Footer from '../Footer/index.jsx';
 
 const index = (props) => {
+  
   const [selectedPdf, setSelectedPdf] = useState(null);
   const [searchTerm, setSearchTerm] = useState('');
   const [selectedSemester, setSelectedSemester] = useState('Semester 1');
@@ -61,7 +62,7 @@ const index = (props) => {
           <div className='flex justify-center mb-4'>
             <FaUniversity className='text-4xl text-indigo-600' />
           </div>
-          <h1 className='text-4xl font-bold text-gray-800 mb-2'>{props.class} Syllabus</h1>
+          <h1 className='text-4xl font-bold text-gray-800 mb-2'>{id} Syllabus</h1>
           <p className='text-lg text-gray-600'>Comprehensive syllabus for all semesters</p>
         </motion.div>
 

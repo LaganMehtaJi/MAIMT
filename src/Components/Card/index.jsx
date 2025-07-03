@@ -1,7 +1,7 @@
-export const Card = ({ image, courseName, instructor, onClick }) => {
+export const Card = ({ image, courseName, instructor, click }) => {
     return (
       <div
-        onClick={onClick}
+        onClick={click}
         className="relative w-full max-w-[420px] h-[300px] rounded-3xl overflow-hidden shadow-[0_15px_45px_rgba(0,0,0,0.15)] group cursor-pointer transition-transform duration-500 hover:scale-[1.02]"
       >
         {/* Background Image */}
