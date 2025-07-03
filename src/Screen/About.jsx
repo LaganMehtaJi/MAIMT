@@ -20,25 +20,25 @@ const teamMembers = [
   },
   {
     id: 2,
-    name: 'Gourav',
+    name: 'Gaurav Sahni',
     position: 'Full Stack Developer',
-    github: 'Gourav',
+    github: 'Gaurav',
     commits: 38,
-    prs: 12
+    prs: 14
   },
   {
     id: 3,
     name: 'Usman Malik',
-    position: 'Backend Developer',
-    github: 'UsmanMalik',
+    position: 'Full Stack Developer',
+    github: 'Usman Malik',
     commits: 35,
     prs: 10
   },
   {
     id: 4,
-    name: 'Firoz Khan',
-    position: 'UI/UX Designer',
-    github: 'Firoz',
+    name: 'Firoj Khan',
+    position: 'Full Stack Developer',
+    github: 'Firoj',
     commits: 12,
     prs: 8
   }

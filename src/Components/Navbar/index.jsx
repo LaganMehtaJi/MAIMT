@@ -32,10 +32,10 @@ const Navbar = () => {
               <Link
                 key={name}
                 to={href}
-                className="text-sm font-medium text-gray-600 hover:text-indigo-600 transition-colors relative py-1"
+                className="group relative text-sm font-semibold text-gray-600 transition-all duration-300 py-1 hover:text-indigo-700 transform hover:-translate-y-0.5 hover:shadow-md"
               >
                 {name}
-                <span className="absolute left-0 bottom-0 h-0.5 w-0 bg-indigo-600 transition-all duration-300 group-hover:w-full" />
+                <span className="absolute left-0 -bottom-1 h-0.5 w-0 bg-indigo-600 transition-all duration-300 group-hover:w-full rounded" />
               </Link>
             ))}
           </nav>
