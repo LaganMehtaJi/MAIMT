@@ -73,9 +73,9 @@ const About = () => {
       ],
       githubActions: [
         { type: "commit", action: "42 commits by Lagan", by: "Lagan" },
-        { type: "commit", action: "38 commits by Gourav", by: "Gourav" },
+        { type: "commit", action: "38 commits by Gourav", by: "Gaurav" },
         { type: "commit", action: "35 commits by Usman", by: "Usman" },
-        { type: "commit", action: "28 commits by Firoz", by: "Firoz" }
+        { type: "commit", action: "28 commits by Firoz", by: "Firoj" }
       ]
     },
     {
