@@ -7,7 +7,7 @@ const index = () => {
     <div className="bg-white">
       {/* Hero Section */}
       <div className="container mx-auto px-6 py-20 flex flex-col lg:flex-row items-center justify-between gap-12">
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8 }}
@@ -19,13 +19,13 @@ const index = () => {
             </span> <br />
             Digital Library
           </h1>
-          
+
           <p className="text-xl text-gray-700 mb-8">
-            Explore our comprehensive digital resources including E-books, Journals, 
-            Syllabus materials, Previous Years' Questions, and more - all designed 
+            Explore our comprehensive digital resources including E-books, Journals,
+            Syllabus materials, Previous Years' Questions, and more - all designed
             to empower your academic journey at Maharaja Agrasen Institute of Management & Technology.
           </p>
-          
+
           <div className="flex flex-wrap gap-4 mb-12">
             <motion.button
               whileHover={{ scale: 1.05 }}
@@ -60,25 +60,27 @@ const index = () => {
         </motion.div>
 
         {/* Image Section - Now part of the flex layout */}
-        <motion.div 
+        <motion.div
           initial={{ opacity: 0, x: 20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.8, delay: 0.2 }}
           className="relative w-full lg:w-1/2"
         >
-          <img 
-            src="https://www.kindpng.com/picc/m/334-3342848_indian-student-with-books-png-transparent-png.png" 
-            alt="MAIMT Digital Library" 
-            className="w-full scale-150 h-auto rounded-xl shadow-2xl border-8 border-white transform rotate-1"
+          <img
+            src="https://www.kindpng.com/picc/m/334-3342848_indian-student-with-books-png-transparent-png.png"
+            alt="MAIMT Digital Library"
+            className="w-full max-w-[450px] h-auto object-contain rounded-xl shadow-2xl border-8 border-white transform rotate-1 mx-auto"
           />
-          <motion.img 
+
+          <motion.img
             src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTD90d_6wDovpcC50OOF1KkgkCDmoM5iJsSNA&s"
             alt="Students studying"
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
-            className="scale-150 absolute -bottom-10 -left-10 w-1/2 h-auto rounded-xl shadow-lg border-4 border-white transform -rotate-3 z-10"
+            className="absolute -bottom-10 -left-10 w-[180px] md:w-[220px] h-auto object-contain rounded-xl shadow-lg border-4 border-white transform -rotate-3 z-10"
           />
+
         </motion.div>
       </div>
 
@@ -104,7 +106,7 @@ const index = () => {
                 description: "Resources curated to help you excel in your studies"
               }
             ].map((feature, index) => (
-              <motion.div 
+              <motion.div
                 key={index}
                 whileHover={{ y: -5 }}
                 className="bg-white p-8 rounded-xl shadow-md text-center"

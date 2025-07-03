@@ -3,7 +3,7 @@ export const courseDetails=[
     id:"1",
     courseName: "BCA",
     image: "BCA.jpg",
-    description: "Bachelor of Computer Applications (BCA) is a 3-year undergraduate program that builds."
+    description: "Bachelor of Computer Applications (BCA) is a 3-year undergraduate program that builds.",
   },
   {
     id:"2",

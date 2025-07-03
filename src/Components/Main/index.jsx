@@ -61,7 +61,7 @@ const index = (props) => {
           <div className='flex justify-center mb-4'>
             <FaUniversity className='text-4xl text-indigo-600' />
           </div>
-          <h1 className='text-4xl font-bold text-gray-800 mb-2'>{prosp.class} Syllabus</h1>
+          <h1 className='text-4xl font-bold text-gray-800 mb-2'>{props.class} Syllabus</h1>
           <p className='text-lg text-gray-600'>Comprehensive syllabus for all semesters</p>
         </motion.div>
 
