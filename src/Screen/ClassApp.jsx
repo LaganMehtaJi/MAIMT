@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
+import Navbar from "../Components/Navbar";
+
 
 const AboutClass = ({ duration, eligibility, intake, type, features, outcomes }) => {
   return (
@@ -306,6 +308,9 @@ const ClassApp = () => {
   const currentCourse = courses[id];
 
   return (
+    <>
+    <Navbar/>
+    
     <div className="min-h-screen bg-gray-50">
       {/* Hero Header */}
       <div className="bg-gradient-to-r from-indigo-700 to-purple-600 text-white py-16 px-4 sm:px-6 lg:px-8">
@@ -395,6 +400,7 @@ const ClassApp = () => {
         </div>
       </div>
     </div>
+    </>
   );
 };
 

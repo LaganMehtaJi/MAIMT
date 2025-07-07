@@ -23,17 +23,5 @@ export const courseDetails=[
     courseName: "MBA",
     image: "../MBA.jpg",
     description: "Master of Business Administration (MBA) is a postgraduate course in business leadership and management."
-  },
-  {
-    id:"5",
-    courseName: "Value Added Courses for Management",
-    image: "../MBA.jpg",
-    description: "Master of Business Administration (MBA) is a postgraduate course in business leadership and management."
-  },
-  {
-    id:"6",
-    courseName: "Value Added Courses for Computer Appliactions",
-    image: "../MBA.jpg",
-    description: "Master of Business Administration (MBA) is a postgraduate course in business leadership and management."
   }
 ]
