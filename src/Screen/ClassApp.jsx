@@ -6,7 +6,7 @@ import Navbar from "../Components/Navbar";
 const AboutClass = ({ duration, eligibility, intake, type, features, outcomes }) => {
   return (
     <div className="bg-white rounded-xl shadow-md p-6 mb-8">
-      <h3 className="text-2xl font-bold text-indigo-800 mb-6 pb-2 border-b border-indigo-100">About This Class</h3>
+      <h3 className="text-2xl font-bold text-indigo-800 mb-6 pb-2 border-b border-indigo-100">About This Course</h3>
       
       <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8">
         <div className="bg-indigo-50 p-4 rounded-lg">
@@ -18,7 +18,7 @@ const AboutClass = ({ duration, eligibility, intake, type, features, outcomes })
           <span className="block text-lg font-semibold text-gray-800 mt-1">{eligibility}</span>
         </div>
         <div className="bg-indigo-50 p-4 rounded-lg">
-          <span className="block text-sm font-medium text-indigo-600">Intake Capacity:</span>
+          <span className="block text-sm font-medium text-indigo-600">Seats:</span>
           <span className="block text-lg font-semibold text-gray-800 mt-1">{intake}</span>
         </div>
         <div className="bg-indigo-50 p-4 rounded-lg">
@@ -116,7 +116,7 @@ const ClassApp = () => {
       aboutClassData: {
         duration: "3 years",
         eligibility: "10+2 with Mathematics/Computer Science",
-        intake: "60 students",
+        intake: "120",
         type: "Full-time",
         features: [
           "Industry-aligned curriculum",
@@ -170,7 +170,7 @@ const ClassApp = () => {
       aboutClassData: {
         duration: "2 years",
         eligibility: "Bachelor's degree with Mathematics/Computer Science",
-        intake: "40 students",
+        intake: "60",
         type: "Full-time",
         features: [
           "Advanced curriculum with specialization options",
@@ -224,7 +224,7 @@ const ClassApp = () => {
       aboutClassData: {
         duration: "3 years",
         eligibility: "10+2 in any stream",
-        intake: "60 students",
+        intake: "120",
         type: "Full-time",
         features: [
           "Case-based learning approach",
@@ -279,7 +279,7 @@ const ClassApp = () => {
       aboutClassData: {
         duration: "2 years",
         eligibility: "Bachelor's degree in any discipline",
-        intake: "60 students",
+        intake: "60",
         type: "Full-time",
         features: [
           "Specialization options",
