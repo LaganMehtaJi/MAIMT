@@ -27,7 +27,7 @@ const teamMembers = [
     github: "laganmehta",
     commits: 40,
     prs: 15,
-    img: "/lagan.jpeg",
+    img: "/lagan.png",
   },
   {
     id: 2,

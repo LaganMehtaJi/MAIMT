@@ -109,7 +109,6 @@ const ClassApp = () => {
           "Software Developer",
           "Web Developer",
           "System Analyst",
-          "Database Administrator",
           "IT Consultant"
         ]
       },
