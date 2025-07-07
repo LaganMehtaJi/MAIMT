@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FaDownload, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import {useParams}  from "react-router-dom";
+import Navbar from '../Navbar/index.jsx';
 
 const index = () => {
     const {id} = useParams();
@@ -125,6 +126,8 @@ const index = () => {
   };
 
   return (
+    <>
+    <Navbar/>
     <div className="max-w-6xl mx-auto px-4 py-8">
       <h1 className="text-3xl font-bold text-center mb-8 text-indigo-700">{id} Question Papers</h1>
       
@@ -210,6 +213,7 @@ const index = () => {
         </div>
       )}
     </div>
+    </>
   );
 };
 

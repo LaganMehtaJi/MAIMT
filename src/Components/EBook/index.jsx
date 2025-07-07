@@ -42,6 +42,8 @@ const {id} = useParams();
   return (
     <>
       <Navbar/>
+      <h1 className="bg-gradient-to-r  from-indigo-600 to-purple-600 bg-clip-text text-transparent w-full text-4xl font-bold text-center mt-2">
+              Books           </h1> <br />
       <div className="min-h-screen">
         <h1 className='text-3xl font-bold text-center my-8'>{id} E-Content</h1>
        

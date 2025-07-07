@@ -33,14 +33,14 @@ const index = () => {
               whileTap={{ scale: 0.95 }}
               className="flex items-center gap-2 px-6 py-3 bg-indigo-600 text-white rounded-lg font-medium shadow-lg hover:shadow-indigo-300 transition-all"
             >
-              Browse Collection <FaArrowRight />
+              Browse Content <FaArrowRight />
             </motion.button></Link>
             <Link to={"/about"}><motion.button
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="flex items-center gap-2 px-6 py-3 border border-indigo-600 text-indigo-600 rounded-lg font-medium hover:bg-indigo-50 transition-all"
             >
-              Learn More
+              About Us
             </motion.button></Link>
           </div>
 

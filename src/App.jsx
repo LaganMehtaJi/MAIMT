@@ -9,6 +9,7 @@ import Jaurnals from '../src/Screen/Journals.jsx';
 import Main from "../src/Components/Main/index.jsx";
 import QuestionPaper from '../src/Components/QuestionPapers/index.jsx';
 import EBook from "../src/Components/EBook/index.jsx";
+import ClassApp from "../src/Screen/ClassApp.jsx";
 import './App.css'
 import { Routes,Route } from "react-router-dom";
 
@@ -31,6 +32,7 @@ function App() {
          <Route path="/class/:id" element={<Main/>} />
            <Route path="/question/:id" element={<QuestionPaper/>} />
              <Route path="/book/:id" element={<EBook/>} />
+             <Route path="/app/:id" element={<ClassApp/>}/>
       </Routes>
    
     </>
