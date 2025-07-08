@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Footer from '../Components/Footer';
 import Navbar from '../Components/Navbar';
 import { Card } from "../Components/Card/index.jsx";
@@ -7,6 +7,9 @@ import { courseDetails } from '../staticData/courseDetails.js';
 
 const EContent = () => {
   const navigate = useNavigate();
+  useEffect(()=>{
+    scrollTo(top);
+  },[])
   return (
    <>
   

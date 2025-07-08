@@ -4,6 +4,9 @@ import Navbar from "../Components/Navbar";
 
 
 const AboutClass = ({ duration, eligibility, intake, type, features, outcomes }) => {
+   useEffect(()=>{
+      scrollTo(top);
+    },[])
   return (
     <div className="bg-white rounded-xl shadow-md p-6 mb-8">
       <h3 className="text-2xl font-bold text-indigo-800 mb-6 pb-2 border-b border-indigo-100">About This Course</h3>

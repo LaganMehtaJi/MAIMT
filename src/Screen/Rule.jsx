@@ -1,6 +1,6 @@
 import NavBar from "../Components/Navbar";
 import Footer from "../Components/Footer";
-import React, { useState } from 'react';
+import React, { useState ,useEffect} from 'react';
 import { 
   FiBook, FiUsers, FiLayers, FiAward, 
   FiCalendar, FiMonitor, FiFileText, 
@@ -10,6 +10,10 @@ import {
 const Rule = () => {
   const [activeTab, setActiveTab] = useState('general');
   const [expandedSection, setExpandedSection] = useState(null);
+
+   useEffect(()=>{
+      scrollTo(top);
+    },[])
 
   const toggleSection = (section) => {
     setExpandedSection(expandedSection === section ? null : section);

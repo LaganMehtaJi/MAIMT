@@ -1,4 +1,4 @@
-import React from "react";
+import {useEffect,React} from "react";
 import { motion } from "framer-motion";
 import { IoMdSchool } from "react-icons/io";
 import {
@@ -45,7 +45,7 @@ const teamMembers = [
     github: "Usman Malik",
     commits: 35,
     prs: 10,
-    img: "/usman.jpeg",
+    img: "/usman.jpg",
   },
   {
     id: 4,
@@ -106,6 +106,9 @@ const developmentPhases = [
 ];
 
 export default function About() {
+   useEffect(()=>{
+      scrollTo(top);
+    },[])
   return (
     <>
       <Navbar />
@@ -115,7 +118,7 @@ export default function About() {
         <img
           src="/MAIMT1.jpg"
           alt="MAIMT Campus"
-          className="w-full h-full object-cover brightness-75"
+          className="w-full h-full object-cover brightness-120"
         />
         <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
         <div className="absolute bottom-0 p-8 text-white">

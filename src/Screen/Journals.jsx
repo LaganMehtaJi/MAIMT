@@ -1,8 +1,11 @@
-import React from 'react'
+import {useEffect,React} from 'react'
 import Footer from '../Components/Footer';
 import Navbar from '../Components/Navbar';
 
 const Jaurnals = () => {
+   useEffect(()=>{
+      scrollTo(top);
+    },[])
   return (
    <>
    
