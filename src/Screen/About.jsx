@@ -108,7 +108,7 @@ const developmentPhases = [
 export default function About() {
    useEffect(()=>{
       scrollTo(top);
-    },[])
+    },[]);
   return (
     <>
       <Navbar />
