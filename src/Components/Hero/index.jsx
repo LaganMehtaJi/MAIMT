@@ -2,7 +2,6 @@ import React from 'react'
 import { motion } from "framer-motion";
 import { FaBookOpen, FaSearch, FaArrowRight, FaTrophy, FaRegLightbulb } from "react-icons/fa";
 import { Link } from "react-router-dom";
-
 const index = () => {
   return (
     <div className="bg-white">

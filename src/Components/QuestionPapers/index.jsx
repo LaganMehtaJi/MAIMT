@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import { FaDownload, FaChevronLeft, FaChevronRight } from 'react-icons/fa';
 import {useParams}  from "react-router-dom";
 import Navbar from '../Navbar/index.jsx';
-
 const index = () => {
     const {id} = useParams();
   const [currentSemester, setCurrentSemester] = useState(1);
